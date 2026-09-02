@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday!</title>
+
+    <style>
+
+        body {
+            background-color: #E97451;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        
+        .cake {
+            font-size: 80px;
+            animation: bounce 1.5s infinite;
+        }
+
+       
+        h1 {
+            color: #8B0000;
+            font-size: 55px;
+        }
+
+        p {
+            color: #8B0000;
+            font-size: 22px;
+        }
+
+       
+        button {
+            position: relative;
+            overflow: hidden;
+
+            background-color: #B22222;
+            color: #E9967A;
+
+            border: none;
+            padding: 16px 30px;
+            border-radius: 30px;
+
+            font-size: 18px;
+            cursor: pointer;
+
+            transition: transform 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.15);
+        }
+
+        
+        button::before {
+            content: "";
+            position: absolute;
+
+            top: 0;
+            left: -100%;
+
+            width: 50%;
+            height: 100%;
+
+            background: rgba(255,255,255,0.4);
+
+            transform: skewX(-25deg);
+            transition: 0.5s;
+        }
+
+        button:hover::before {
+            left: 150%;
+        }
+
+       
+        .note {
+            position: absolute;
+            right: 60px;
+            top: 150px;
+
+            width: 230px;
+            padding: 25px;
+
+            background-color: #fffdf0;
+
+            border-radius: 15px;
+
+            box-shadow: 5px 8px 20px rgba(0,0,0,0.15);
+
+            transform: rotate(3deg);
+
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .note h2 {
+            color: #5F7A99;
+            margin-top: 0;
+        }
+
+        .note p {
+            font-size: 17px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+       
+        .tape {
+            position: absolute;
+            top: -12px;
+            left: 80px;
+
+            width: 80px;
+            height: 25px;
+
+            background-color: #ffdf70;
+
+            transform: rotate(-5deg);
+        }
+
+       
+        @keyframes bounce {
+
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+        }
+
+      
+        @keyframes float {
+
+            0%, 100% {
+                transform: rotate(3deg) translateY(0);
+            }
+
+            50% {
+                transform: rotate(3deg) translateY(-10px);
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="cake">🎂</div>
+
+    <h1>HAPPY BIRTHDAY!</h1>
+
+    <p>Wishing you the happiest birthday ever!
+        
+    </p>
+
+    <button onclick="alert('♡ I LOVE YOU SO MUCH♡ Thank you for being my friend, and always being there when I needed you and for the yaps ehehe, But that is not just That, I love everything about you, Your long hair ehehe, The way you word things, the kindness you have, The way you express yourself, Your sense of humor, Your strength, There is so much I could go on. Before when we were on duolingo, I never thought you would be the one I would be the most closes to, That person I could rely on and laugh with, and cry with. I love and care about you a lot, Take care of yourself and treat yourself to someting good!! I hope that Your birthday is filled with everything that makes you happy, You deserve the best, Happy birthday girlie!')">
+        ✨ Click Me! ✨
+    </button>
+
+
+
+    <div class="note">
+
+        <div class="tape"></div>
+
+        <h2>💌 A Little Note</h2>
+
+        <p>
+            ISAIAH 40:31 <br><br>
+
+            
+        </p>
+
+        <p> but those who hope in the Lord
+    will renew their strength.
+They will soar on wings like eagles;
+    they will run and not grow weary,
+    they will walk and not be faint.</p>
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
